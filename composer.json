@@ -1,0 +1,23 @@
+{
+    "name": "thiagobritto/Api_Rest_PHP7.4_and_Slim_Framework",
+	"description": "api rest gerencia de lojas lojas",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Thiago Brito",
+			"email": "thiagobritto.developer@gmail.com"
+		}
+	],
+    "require": {
+        "php": "^7.4",
+        "slim/slim": "3.*",
+        "tuupola/slim-basic-auth": "3.2",
+        "tuupola/slim-jwt-auth": "3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

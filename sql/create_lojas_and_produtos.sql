@@ -1,0 +1,18 @@
+CREATE TABLE lojas(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(100) NOT NULL,
+  telefone VARCHAR(15) NOT NULL,
+  endereco VARCHAR(200) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE produtos(
+	id INT(11) NOT NULL AUTO_INCREMENT,
+  id_loja INT(11) NOT NULL,
+  nome VARCHAR(100) NOT NULL,
+  preco DECIMAL(10,2) NOT NULL,
+  quantidade INT UNSIGNED NOT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT fk_produtos_loja_id_loja_id
+    FOREIGN KEY (id_loja) REFERENCES lojas(id)
+) ENGINE = InnoDB DEFAULT CHARACTER SET = utf8;

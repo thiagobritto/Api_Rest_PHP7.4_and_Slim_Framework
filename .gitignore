@@ -1,0 +1,8 @@
+
+# Files Ignire
+
+*.txt
+vendor/
+composer.lock
+env.php
+
